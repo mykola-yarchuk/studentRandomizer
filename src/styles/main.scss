@@ -5,3 +5,45 @@
 body {
   background: $c-gray;
 }
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.session {
+  padding: 16px;
+  margin: 16px;
+  border: pink solid 1px;
+  border-radius: 8px;
+}
+
+.room {
+  display: inline-block;
+}
+
+.singleSession {
+  margin: 16px 48px 16px 0;
+}
+
+.pseudoForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+#names {
+  width: 100%;
+  resize: vertical;
+  margin-bottom: 24px;
+}
