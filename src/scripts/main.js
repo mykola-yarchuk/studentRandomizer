@@ -170,7 +170,7 @@ const clean = () => {
 const createStudents = () => {
   const textarea = document.querySelector('#names');
   const text = textarea.value;
-  const fixedTxt = text.replace(/\W/g, ' ');
+  const fixedTxt = text.replace(/[^А-ЯA-Z]/gi, ' ');
   const words = fixedTxt.split(' ');
   const names = [];
 
