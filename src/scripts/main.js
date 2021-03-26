@@ -170,7 +170,7 @@ const clean = () => {
 const createStudents = () => {
   const textarea = document.querySelector('#names');
   const text = textarea.value;
-  const fixedTxt = text.replace(/[^А-ЯA-Zі]/gi, ' ');
+  const fixedTxt = text.replace(/[^А-ЯA-Zіїє]/gi, ' ');
 
   const words = fixedTxt.split(' ');
   const names = [];
@@ -178,8 +178,8 @@ const createStudents = () => {
   const removeSpaces = [];
 
   words.forEach((el) => {
-    if (el.replace(/[^А-ЯA-Z]/gi, ' ')) {
-      removeSpaces.push(el.replace(/[^А-ЯA-Zі]/gi, ' '));
+    if (el.replace(/[^А-ЯA-Zіїє]/gi, ' ')) {
+      removeSpaces.push(el.replace(/[^А-ЯA-Zіїє]/gi, ' '));
     }
   });
 
